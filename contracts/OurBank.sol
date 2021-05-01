@@ -3,11 +3,11 @@ pragma solidity ^0.8.0;
 
 contract OurBank {
     address private owner;
-    struct User {
+    struct Account {
         bool enrolled;
         uint256 balance;
     }
-    mapping(address => User) user;
+    mapping(address => Account) accounts;
 
     constructor() {
     }
